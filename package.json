@@ -1,0 +1,25 @@
+{
+  "name": "zorexclaw",
+  "version": "1.0.0",
+  "description": "Zorexclaw local AI Telegram agent",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "better-sqlite3": "^11.5.0",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.32.0",
+    "groq-sdk": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.5.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
