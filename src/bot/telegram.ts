@@ -1,6 +1,6 @@
 import { Bot } from 'grammy';
-import { config } from '../config/env.js';
-import { runAgent, resetAgent } from '../agent/loop.js';
+import { config } from '../config/env.ts';
+import { runAgent, resetAgent } from '../agent/loop.ts';
 
 export const bot = new Bot(config.TELEGRAM_BOT_TOKEN);
 
