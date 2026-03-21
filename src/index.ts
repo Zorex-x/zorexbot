@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-const TOKEN = process.env.BOT_TOKEN;
+const TOKEN = process.env.8336792134:AAE2erjQyNO27KpgJg8659wzvUA9C1HBvPU;
 
 // اختبار
 app.get("/", (req, res) => {
