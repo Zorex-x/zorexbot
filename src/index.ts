@@ -1,5 +1,5 @@
-import { bot } from './bot/telegram.ts';
-import { config } from './config/env.ts';
+import { bot } from './bot/telegram.js';
+import { config } from './config/env.js';
 
 console.log('Booting Zorexclaw local node...');
 console.log(`Whitelisted Telegram User IDs: ${config.ALLOWED_USER_IDS.join(', ')}`);
