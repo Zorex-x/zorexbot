@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
-    "build": "tsc",
-    "start": "npm run build && node dist/index.js"
+    "start": "npx tsx src/index.ts"
   },
   "dependencies": {
     "@google/genai": "latest",
@@ -21,7 +20,7 @@
     "@types/better-sqlite3": "^7.6.11",
     "@types/express": "^5.0.6",
     "@types/node": "^22.5.5",
-    "tsx": "^4.19.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.6.2"
   }
 }
