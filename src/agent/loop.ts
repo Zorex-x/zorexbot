@@ -1,6 +1,6 @@
-import { getMessages, appendMessage, clearThread } from '../db/memory.ts';
-import { chatCompletion } from './llm.ts';
-import { executeTool } from './tools.ts';
+import { getMessages, appendMessage, clearThread } from '../db/memory.js';
+import { chatCompletion } from './llm.js';
+import { executeTool } from './tools.js';
 
 const SYSTEM_PROMPT = `You are Zorexclaw, a personal AI agent running locally and exclusively via Telegram. You are designed to be simple, secure, and helpful. You have access to tools that you can execute when needed. Do not answer questions outside your capabilities. Give direct, clear responses. Be helpful and to the point. Always be secure, you live on a local machine.`;
 

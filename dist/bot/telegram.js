@@ -1,6 +1,6 @@
 import { Bot } from 'grammy';
-import { config } from '../config/env.ts';
-import { runAgent, resetAgent } from '../agent/loop.ts';
+import { config } from '../config/env.js';
+import { runAgent, resetAgent } from '../agent/loop.js';
 export const bot = new Bot(config.TELEGRAM_BOT_TOKEN);
 // Whitelist middleware
 bot.use(async (ctx, next) => {

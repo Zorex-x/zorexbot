@@ -1,3 +1,4 @@
+import express from 'express';
 import { bot } from './bot/telegram.js';
 import { config } from './config/env.js';
 
@@ -11,6 +12,18 @@ process.on('unhandledRejection', (reason, promise) => {
 
 process.on('uncaughtException', (err) => {
     console.error('Uncaught Exception:', err);
+});
+
+// Setup Express server for Railway health checks and port binding
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+    res.send('Zorexclaw Agent is running!');
+});
+
+app.listen(PORT, () => {
+    console.log(`HTTP server listening on port ${PORT}`);
 });
 
 // Start the bot with long polling

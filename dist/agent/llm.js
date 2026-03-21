@@ -1,7 +1,7 @@
 import Groq from 'groq-sdk';
 import { GoogleGenAI } from '@google/genai';
-import { config } from '../config/env.ts';
-import { tools } from './tools.ts';
+import { config } from '../config/env.js';
+import { tools } from './tools.js';
 const groq = new Groq({ apiKey: config.GROQ_API_KEY });
 let genai = null;
 if (config.GEMINI_API_KEY) {

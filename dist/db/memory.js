@@ -1,5 +1,5 @@
 import Database from 'better-sqlite3';
-import { config } from '../config/env.ts';
+import { config } from '../config/env.js';
 // We serialize the entire message object to accommodate text, tools, and tool responses.
 const db = new Database(config.DB_PATH);
 db.exec(`
