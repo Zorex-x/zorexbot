@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-const TOKEN = process.env.8336792134:AAE2erjQyNO27KpgJg8659wzvUA9C1HBvPU;
+const TOKEN = process.env.BOT_TOKEN;
 
 // اختبار
 app.get("/", (req, res) => {
@@ -23,7 +23,7 @@ app.post("/", async (req, res) => {
       const chatId = message.chat.id;
       const text = message.text || "بدون نص";
 
-      await axios.post(`https://api.telegram.org/bot${8336792134:AAE2erjQyNO27KpgJg8659wzvUA9C1HBvPU}/sendMessage`, {
+      await axios.post(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
         chat_id: chatId,
         text: "وصلت رسالتك: " + text
       });
