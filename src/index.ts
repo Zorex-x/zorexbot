@@ -21,10 +21,7 @@ app.post("/", async (req, res) => {
 
     if (message) {
       const chatId = message.chat.id;
-      const text =
-  message.text ||
-  message.caption ||
-  "رسالة بدون نص";
+      const text = message.text || "بدون نص";
 
       await axios.post(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
         chat_id: chatId,
