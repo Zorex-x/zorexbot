@@ -22,7 +22,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 // اختبار
 app.get("/", (req, res) => {
-  res.send("Bot is running 🚀");
+  res.send("NEW VERSION 🔥");
 });
 
 app.post("/", async (req, res) => {
