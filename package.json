@@ -5,22 +5,24 @@
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-  "start": "npx tsx src/index.ts"
-}
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "npx tsx src/index.ts"
+  },
   "dependencies": {
-  "@google/genai": "latest",
-  "better-sqlite3": "^11.5.0",
-  "dotenv": "^16.4.5",
-  "express": "^4.21.0",
-  "grammy": "^1.32.0",
-  "groq-sdk": "^0.8.0",
-  "axios": "^1.6.0"
-}
+    "@google/genai": "latest",
+    "axios": "^1.13.6",
+    "better-sqlite3": "^11.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "grammy": "^1.32.0",
+    "groq-sdk": "^0.8.0"
+  },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",
     "@types/express": "^5.0.0",
     "@types/node": "^22.5.5",
-    "tsx": "^4.7.0"
+    "tsx": "^4.19.1",
     "typescript": "^5.6.2"
   }
 }
