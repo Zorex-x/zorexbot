@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 // استقبال رسائل Telegram
-app.post("/", async (req, res) => {
+app.post("/*", async (req, res) => {
   try {
     const message = req.body.message;
 
